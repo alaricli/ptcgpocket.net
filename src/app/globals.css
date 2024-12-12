@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/Lato.ttf") format("truetype");
+  font-display: swap;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Lato", sans-serif;
+}
+
+@font-face {
+  font-family: "PokemonEnergy";
+  src: url("/fonts/PokemonEnergy.ttf") format("truetype");
+  font-display: swap;
+}
+
+.energy-icon {
+  font-family: "PokemonEnergy", sans-serif;
+  font-size: 24px;
+}

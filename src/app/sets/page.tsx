@@ -5,7 +5,7 @@ import Link from "next/link";
 async function fetchSets(): Promise<Expansion[]> {
   try {
     const response = await fetch(
-      "http://localhost:8080/api/get/expansions/pocket",
+      "https://api.ptcgpocket.net/api/get/expansions/pocket",
       {
         // Important for server-side fetching
         cache: "no-store", // or 'force-cache' depending on your needs

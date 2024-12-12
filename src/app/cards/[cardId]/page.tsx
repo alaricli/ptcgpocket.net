@@ -5,7 +5,7 @@ import Image from "next/image";
 async function fetchCardDetails(cardId: string): Promise<Card | null> {
   try {
     const response = await fetch(
-      `http://localhost:8080/api/get/card/${cardId}`
+      `https://api.ptcgpocket.net/api/get/card/${cardId}`
     );
 
     if (!response.ok) {

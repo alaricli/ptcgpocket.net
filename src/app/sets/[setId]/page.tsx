@@ -15,7 +15,7 @@ async function fetchCards(
       ...filters,
     }).toString();
     const response = await fetch(
-      `http://localhost:8080/api/get/cards?${queryParams}`
+      `https://api.ptcgpocket.net/api/get/cards?${queryParams}`
     );
 
     if (!response.ok) {
@@ -49,7 +49,7 @@ async function fetchExpansionDetails(setId: string): Promise<Expansion | null> {
 
   try {
     const response = await fetch(
-      `http://localhost:8080/api/get/expansion/${setId}`
+      `https://api.ptcgpocket.net/api/get/expansion/${setId}`
     );
 
     if (!response.ok) {

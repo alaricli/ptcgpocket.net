@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
           {/* Column 1: Logo */}
           <div>
-            <h3>Logo Here</h3>
+            <h3></h3>
           </div>
           {/* Column 2: Links */}
           <div>
@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-4 text-center">
-          <p>&copy; 2024 Professor's Research TCG. All rights reserved.</p>
+          <p>&copy; 2024 Professor&apos;s Research TCG. All rights reserved.</p>
           <p className="text-xs mt-1">
             Pokémon and All Respective Names are Trademark & © of Nintendo.
           </p>

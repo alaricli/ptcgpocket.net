@@ -9,7 +9,7 @@ export default function AboutPage() {
           Our mission is to create an easy-to-use, comprehensive resource for
           Pokémon TCG Pocket fans to explore, filter, and discover cards from
           various expansions. Whether you're a seasoned player, collector, or
-          just starting, we’re here to make navigating Pokémon TCG Pocket
+          just starting, we&apos;re here to make navigating Pokémon TCG Pocket
           simpler.
         </p>
         <h2 className="text-xl font-semibold mb-2">Available Features:</h2>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -7,7 +8,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
           {/* Column 1: Logo */}
           <div>
-            <h3></h3>
+            <Image
+              src="/prtcgp_logo.png"
+              width={150}
+              height={150}
+              alt="/Logo"
+            />
           </div>
           {/* Column 2: Links */}
           <div>

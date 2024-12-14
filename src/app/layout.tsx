@@ -4,7 +4,7 @@ import Navbar from "./components/navigation/navbar/Navbar";
 import Footer from "./components/navigation/footer/Footer";
 
 export const metadata: Metadata = {
-  title: "professorsresearchtcg.com",
+  title: "ptcgpocket.net",
   description: "",
 };
 

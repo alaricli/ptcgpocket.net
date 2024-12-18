@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const slides = ["/cards_cover.png", "/sets_cover.png", "/meta_cover.png"];
   const covers = ["/cards_cover.png", "/sets_cover.png", "/meta_cover.png"];
 
   return (

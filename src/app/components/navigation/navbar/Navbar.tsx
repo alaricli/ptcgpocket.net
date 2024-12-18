@@ -24,16 +24,17 @@ const Navbar = () => {
               <p className="hover:text-orange-400">Sets</p>
             </Link>
           </li>
-          {/* <li>
-            <Link href="/decks">
-              <p className="hover:text-orange-400">Decks</p>
-            </Link>
-          </li>
           <li>
             <Link href="/meta">
               <p className="hover:text-orange-400">Meta</p>
             </Link>
           </li>
+          {/* <li>
+            <Link href="/decks">
+              <p className="hover:text-orange-400">Decks</p>
+            </Link>
+          </li>
+          
           <li>
             <Link href="/articles">
               <p className="hover:text-orange-400">Articles</p>

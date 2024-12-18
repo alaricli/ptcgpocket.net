@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 export default function Home() {
   const slides = ["/cards_cover.png", "/sets_cover.png", "/meta_cover.png"];

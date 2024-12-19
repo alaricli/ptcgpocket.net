@@ -1,35 +1,43 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-900 p-4">
-      <div className="flex justify-center">
-        <ul className="flex space-x-6 text-white font-medium text-xl">
-          <li>
-            <Link href="/">
-              <p className="hover:text-orange-400">Home</p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={{
-                pathname: `/sets/all`,
-              }}
-            >
-              <p className="hover:text-orange-400">Cards</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="/sets">
-              <p className="hover:text-orange-400">Sets</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="/meta">
-              <p className="hover:text-orange-400">Meta</p>
-            </Link>
-          </li>
-          {/* <li>
+    <nav className="bg-gray-900 p-3">
+      <div className="flex items-center justify-between">
+        <div>
+          <Link href="/">
+            <Image
+              src={"/script_logo.png"}
+              alt={"ptcgpocket.net Logo"}
+              width={400}
+              height={50}
+              className="cursor-pointer ml-1"
+            />
+          </Link>
+        </div>
+        <div className="flex items-center absolute left-1/2 transform -translate-x-1/2">
+          <ul className="flex space-x-6 text-white font-medium text-xl">
+            <li>
+              <Link
+                href={{
+                  pathname: `/sets/all`,
+                }}
+              >
+                <p className="hover:text-orange-400">Cards</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/sets">
+                <p className="hover:text-orange-400">Sets</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/meta">
+                <p className="hover:text-orange-400">Meta</p>
+              </Link>
+            </li>
+            {/* <li>
             <Link href="/decks">
               <p className="hover:text-orange-400">Decks</p>
             </Link>
@@ -40,7 +48,9 @@ const Navbar = () => {
               <p className="hover:text-orange-400">Articles</p>
             </Link>
           </li> */}
-        </ul>
+          </ul>
+        </div>
+        <div></div>
       </div>
     </nav>
   );

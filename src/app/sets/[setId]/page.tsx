@@ -115,7 +115,7 @@ export default function SetPage({
       { value: "A1-2", label: "Genetic Apex: Charizard Pack" },
       { value: "A1-3", label: "Genetic Apex: Pikachu Pack" },
     ],
-    "P-A": [
+    PROMOA: [
       { value: "PA1-1", label: "Promo Pack A Series Vol.1" },
       { value: "PA1-2", label: "Promo Pack A Series Vol.2" },
       { value: "PA1-3", label: "Promo Pack A Series Vol.3" },
@@ -142,8 +142,9 @@ export default function SetPage({
 
   const headerColorOptions: Record<string, string> = {
     A1: "bg-gradient-to-r from-[rgb(173,40,200)] via-[rgb(142,28,233)] to-[rgb(22,20,171)]",
-    "P-A":
+    PROMOA:
       "bg-gradient-to-r from-[rgb(41,93,230)] via-[rgb(26,21,95)] to-[rgb(17,47,193)]",
+    A1a: "bg-gradient-to-r from-[rgb(98,190,172)] via-[rgb(73,112,212)] to-[rgb(174,78,191)]",
     default: "bg-gradient-to-r from-[rgb(255,223,0)] to-[rgb(0,105,180)]",
   };
 
@@ -209,7 +210,7 @@ export default function SetPage({
           >
             <option value="">All</option>
             <option value="A1">Genetic Apex</option>
-            <option value="P-A">Promo A</option>
+            <option value="PROMOA">Promo A</option>
             <option value="A1a">Mythical Island</option>
           </select>
 

@@ -11,7 +11,7 @@ async function fetchCards(
 ): Promise<Card[]> {
   try {
     const queryParams = new URLSearchParams({
-      ...(setId && { setId }),
+      ...(setId && { expansionId: setId }),
       ...filters,
     }).toString();
     const response = await fetch(

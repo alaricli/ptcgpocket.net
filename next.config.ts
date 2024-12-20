@@ -15,6 +15,12 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/pocket-game-assets.codex.gg/cards/**",
       },
+      {
+        protocol: "https",
+        hostname: "limitlesstcg.nyc3.cdn.digitaloceanspaces.com",
+        port: "",
+        pathname: "/pocket/**",
+      },
     ],
   },
 };

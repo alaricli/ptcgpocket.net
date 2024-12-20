@@ -118,6 +118,7 @@ export default function SetPage({
     "P-A": [
       { value: "PA1-1", label: "Promo Pack A Series Vol.1" },
       { value: "PA1-2", label: "Promo Pack A Series Vol.2" },
+      { value: "PA1-3", label: "Promo Pack A Series Vol.3" },
     ],
     default: [
       { value: "A1-1", label: "Genetic Apex: Mewtwo Pack" },
@@ -125,6 +126,7 @@ export default function SetPage({
       { value: "A1-3", label: "Genetic Apex: Pikachu Pack" },
       { value: "PA1-1", label: "Promo Pack A Series Vol.1" },
       { value: "PA1-2", label: "Promo Pack A Series Vol.2" },
+      { value: "PA1-3", label: "Promo Pack A Series Vol.3" },
       { value: "M", label: "Missions" },
       { value: "Shop", label: "Shop" },
       { value: "WP", label: "Wonder Pick" },
@@ -208,6 +210,7 @@ export default function SetPage({
             <option value="">All</option>
             <option value="A1">Genetic Apex</option>
             <option value="P-A">Promo A</option>
+            <option value="A1a">Mythical Island</option>
           </select>
 
           <label className="block mb-2 text-sm font-medium ">

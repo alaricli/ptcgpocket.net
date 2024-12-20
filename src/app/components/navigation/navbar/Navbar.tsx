@@ -34,20 +34,15 @@ const Navbar = () => {
             </li>
             <li>
               <Link href="/meta">
-                <p className="hover:text-orange-400">Meta</p>
+                <p className="hover:text-orange-400">Decks</p>
               </Link>
             </li>
-            {/* <li>
-            <Link href="/decks">
-              <p className="hover:text-orange-400">Decks</p>
-            </Link>
-          </li>
-          
-          <li>
-            <Link href="/articles">
-              <p className="hover:text-orange-400">Articles</p>
-            </Link>
-          </li> */}
+
+            <li>
+              <Link href="/articles">
+                <p className="hover:text-orange-400">Articles</p>
+              </Link>
+            </li>
           </ul>
         </div>
         <div></div>

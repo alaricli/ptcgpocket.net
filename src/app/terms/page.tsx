@@ -1,6 +1,6 @@
 export default function TermsPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="flex items-center justify-center">
       <div className="max-w-2xl shadow-md rounded-lg p-8">
         <h1 className="text-3xl font-bold mb-2">Terms of Use</h1>
         <p className=" text-sm mb-8">Last Updated: December 10, 2024</p>

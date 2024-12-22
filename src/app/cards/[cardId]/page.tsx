@@ -30,11 +30,11 @@ export default async function CardPage({
   const cardDetails = await fetchCardDetails(cardId);
 
   if (!cardDetails) {
-    return <div className="min-h-screen">404: Card Not Found</div>;
+    return <div className="">404: Card Not Found</div>;
   }
 
   return (
-    <div className="min-w-screen min-h-screen shadow-lg rounded-lg overflow-hidden flex">
+    <div className="min-w-screen shadow-lg rounded-lg overflow-hidden flex">
       {/* Left Section: Image */}
       <div className="w-1/3 p-4 flex items-center justify-center">
         <Image

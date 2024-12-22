@@ -1,10 +1,10 @@
 export default function AboutPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="flex items-center justify-center">
       <div className="max-w-3xl shadow-md rounded-lg p-8">
         <h1 className="text-3xl font-bold mb-2">About</h1>
         <p className=" text-sm mb-8">Last Updated: December 10, 2024</p>
-        <p className="mb-4">Welcome to ptcgpocket.com!</p>
+        <p className="mb-4">Welcome to ptcgpocket.net!</p>
         <p className="mb-4">
           Our mission is to create an easy-to-use, comprehensive resource for
           Pokémon TCG Pocket fans to explore, filter, and discover cards from

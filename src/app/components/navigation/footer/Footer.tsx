@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto p-4">
@@ -18,11 +20,6 @@ const Footer = () => {
                   <p className="hover:text-orange-400">Home</p>
                 </Link>
               </li>
-              {/* <li>
-                <Link href="/articles">
-                  <p className="hover:text-orange-400">Articles</p>
-                </Link>
-              </li> */}
               <li>
                 <Link href="/sets/all">
                   <p className="hover:text-orange-400">Cards</p>
@@ -33,16 +30,16 @@ const Footer = () => {
                   <p className="hover:text-orange-400">Sets</p>
                 </Link>
               </li>
-              {/* <li>
+              <li>
                 <Link href="/decks">
                   <p className="hover:text-orange-400">Decks</p>
                 </Link>
               </li>
               <li>
-                <Link href="/meta">
-                  <p className="hover:text-orange-400">Meta</p>
+                <Link href="/articles">
+                  <p className="hover:text-orange-400">Articles</p>
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
           {/* Column 3: About Data */}
@@ -72,7 +69,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-4 text-center">
-          <p>&copy; 2024 Professor&apos;s Research TCG. All rights reserved.</p>
+          <p>
+            &copy; {currentYear} Professor&apos;s Research TCG. All rights
+            reserved.
+          </p>
           <p className="text-xs mt-1">
             Pokémon and All Respective Names are Trademark & © of Nintendo.
           </p>

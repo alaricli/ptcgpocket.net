@@ -149,7 +149,7 @@ export default function SetPage({
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="">
       <header
         className={`${headerColorOptions[setId] || headerColorOptions.default}
         shadow-md py-4 px-6 flex items-center justify-between w-full`}

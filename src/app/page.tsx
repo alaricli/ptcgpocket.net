@@ -5,7 +5,7 @@ export default function Home() {
   const covers = ["/cards_cover.png", "/sets_cover.png", "/meta_cover.png"];
 
   return (
-    <div className="grid grid-rows-[auto_1fr_auto] min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[auto_1fr_auto] font-[family-name:var(--font-geist-sans)]">
       <div className=" row-start-1 p-8">
         <header className="text-center">
           <h1 className="text-3xl font-bold">Welcome to ptcgpocket.net!</h1>
@@ -36,7 +36,7 @@ export default function Home() {
           {covers.map((cover, index) => (
             <div
               key={index}
-              className="relative pb-[56.25%] rounded-lg shadow cursor-pointer hover:shadow-lg border-4 hover:scale-105 overflow-hidden transition-all"
+              className="relative pb-[56.25%] rounded-lg shadow cursor-pointer hover:shadow-lg border-2 hover:scale-105 overflow-hidden transition-all"
             >
               <Link
                 href={index === 0 ? "sets/all" : index === 1 ? "sets" : "meta"}

@@ -31,7 +31,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/decks">
+                <Link href="/meta">
                   <p className="hover:text-orange-400">Decks</p>
                 </Link>
               </li>

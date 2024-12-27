@@ -13,13 +13,26 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "s3.amazonaws.com",
         port: "",
-        pathname: "/pocket-game-assets.codex.gg/cards/**",
+        pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "s3.us-east-1.amazonaws.com",
+        port: "",
+        pathname: "/**",
+      },
+
       {
         protocol: "https",
         hostname: "limitlesstcg.nyc3.cdn.digitaloceanspaces.com",
         port: "",
         pathname: "/pocket/**",
+      },
+      {
+        protocol: "https",
+        hostname: "fastly.picsum.photos",
+        port: "",
+        pathname: "/**",
       },
     ],
   },

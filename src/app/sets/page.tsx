@@ -42,13 +42,13 @@ export default async function SetsPage() {
               key={set.id}
               className=" dark:bg-gray-800 bg-gray-200 text-gray-800 dark:text-gray-200 border rounded-lg shadow-md p-6 hover:scale-105 transition-all overflow-hidden w-full h-full"
             >
-              <div className="flex items-center mb-4">
+              <div className="flex justify-between mb-4">
                 {set.expansionImages.symbol && (
                   <Image
                     src={set.expansionImages.symbol}
                     alt={`${set.name} symbol`}
-                    width={50}
-                    height={50}
+                    width={100}
+                    height={100}
                     className="mr-4"
                   />
                 )}

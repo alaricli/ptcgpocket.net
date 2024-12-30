@@ -68,7 +68,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-700 pt-4 text-center">
+        <div className="p-8 border-t border-gray-700 pt-4 text-center">
           <p>
             &copy; {currentYear} Professor&apos;s Research TCG. All rights
             reserved.

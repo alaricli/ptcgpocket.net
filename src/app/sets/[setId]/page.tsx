@@ -73,7 +73,9 @@ export default function SetPage({
   const { setId: initialSetId = "" } = params;
 
   const [setId, setSetId] = useState(initialSetId);
-  const [filters, setFilters] = useState<Record<string, string>>({});
+  const [filters, setFilters] = useState<Record<string, string>>({
+    pageSize: "9999",
+  });
   const [cards, setCards] = useState<Card[]>([]);
   const [expansionDetails, setExpansionDetails] = useState<Expansion | null>(
     null
@@ -101,7 +103,7 @@ export default function SetPage({
     setFilters((prevFilters) => {
       const updatedFilters = { ...prevFilters };
       if (!filterValue || filterKey === "All") {
-        delete updatedFilters[filterKey]; // Remove key if value is cleared
+        delete updatedFilters[filterKey];
       } else {
         updatedFilters[filterKey] = filterValue;
       }

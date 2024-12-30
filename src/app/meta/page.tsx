@@ -5,7 +5,7 @@ import Link from "next/link";
 async function fetchArchetypes(): Promise<Archetype[]> {
   try {
     const response = await fetch(
-      "http://localhost:8080/api/get/archetypes/pocket"
+      "https://api.ptcgpocket.net/api/get/archetypes/pocket"
     );
 
     if (!response.ok) {
@@ -23,9 +23,19 @@ export default async function MetaPage() {
   const archetypes = await fetchArchetypes();
 
   return (
-    <div className="items-center justify-center mx-auto container">
-      <h2 className="text-3xl font-semibold p-6 text-center">Meta Decks</h2>
-      <div className="border-b flex"></div>
+    <div className="px-4 sm:px-6 lg:px-8 py-8 mx-auto container">
+      <div className="text-center mb-8">
+        <h2 className="text-4xl font-semibold mb-2">Meta Decks</h2>
+        <p className="text-sm italic">last updated: December 28, 2024</p>
+      </div>
+
+      <div className="grid grid-cols-[1fr,2fr,2fr,5fr,1fr] items-center gap-4 border p-4 font-semibold dark:bg-gray-800 bg-gray-200 text-gray-800 dark:text-gray-200">
+        <div>Ranking:</div>
+        <div></div>
+        <div></div>
+        <div className="items-center pl-[20%] flex">Deck Type:</div>
+      </div>
+
       <div>
         {archetypes
           .sort((a, b) => a.ranking - b.ranking)
@@ -36,35 +46,45 @@ export default async function MetaPage() {
                 pathname: `/meta/${archetype.id}`,
               }}
             >
-              <div key={archetype.id} className="border-x border-b">
-                <div className="flex items-center gap-4 p-2">
-                  {archetype.ranking}
-                  <div className="flex items-center gap-2">
-                    {archetype.pokemonsImages.map((pokemonImage, index) => (
-                      <div key={index}>
-                        <Image
-                          src={pokemonImage}
-                          alt={`Pokemon ${index + 1}`}
-                          width={40}
-                          height={40}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                  <div className="flex items-center gap-2">
-                    {archetype.energyTypesIcons.map((energyTypeIcon, index) => (
-                      <div key={index}>
-                        <Image
-                          src={energyTypeIcon}
-                          alt={`Pokemon ${index + 1}`}
-                          width={40}
-                          height={40}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                  <div></div>
+              <div className="grid grid-cols-[1fr,2fr,2fr,5fr,1fr] items-center gap-4 border-x border-b p-4 dark:bg-gray-800 bg-gray-200 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">
+                {/* Ranking */}
+                <div className="">{archetype.ranking}</div>
+                {/* Images */}
+                <div className="gap-1 flex items-start">
+                  {archetype.pokemonsImages.map((pokemonImage, index) => (
+                    <div key={index}>
+                      <Image
+                        src={pokemonImage}
+                        alt={`Pokemon ${index + 1}`}
+                        width={40}
+                        height={40}
+                        className="rounded-md shadow-sm"
+                      />
+                    </div>
+                  ))}
+                </div>
+                {/* Energy Icons */}
+                <div className="gap-1 flex items-start">
+                  {archetype.energyTypesIcons.map((energyTypeIcon, index) => (
+                    <div key={index}>
+                      <Image
+                        src={energyTypeIcon}
+                        alt={`Pokemon ${index + 1}`}
+                        width={40}
+                        height={40}
+                        className="rounded-md shadow-sm"
+                      />
+                    </div>
+                  ))}
+                </div>
+                {/* Name */}
+                <div className="items-center pl-[20%] flex">
                   {archetype.name}
+                </div>
+                <div className="text-right">
+                  <span className="hover:underline text-blue-500">
+                    View Decks
+                  </span>
                 </div>
               </div>
             </Link>

@@ -408,7 +408,7 @@ export default function SetPage({
         {cards.map((card) => (
           <div
             key={card.id}
-            className="rounded-lg p-4 w-64 flex flex-col items-center shadow-md"
+            className="rounded-lg p-4 w-64 flex flex-col items-center shadow-md hover:scale-105 transition-transform overflow-hidden"
           >
             <Link
               href={{
@@ -420,8 +420,8 @@ export default function SetPage({
                   src={card.cardImages.small}
                   alt={`${card.name} image`}
                   className="object-cover rounded-lg"
-                  height={250}
-                  width={250}
+                  height={200}
+                  width={300}
                 />
                 <div className="flex justify-between w-full p-2 mt-2">
                   <p className="text-lg font-semibold">{card.name}</p>

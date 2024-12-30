@@ -23,6 +23,9 @@ export interface Card {
   marketPrice: number | null;
   rules: string[];
   expansionId: string;
+  expansionLogo: string;
+  expansionSymbol: string;
+  expansionName: string;
   cardNumber: number;
   rarity: string;
   superType: string;
@@ -78,7 +81,9 @@ export interface Article {
   created_at: string; // Assuming it's a date-time string, you might use `Date` if parsed
   updated_at: string; // Same as above
   author: string;
+  image: string;
   slug: string;
+  blurb: string;
   tags: string[]; // List<String> corresponds to string[]
   contents: ArticleContent[]; // List<ArticleContentResponseDTO> corresponds to an array of ArticleContentResponseDTO
 }
@@ -90,12 +95,17 @@ export interface ArticleContent {
 }
 
 export interface Deck {
-  id: number; // Long in Java corresponds to number in TypeScript
-  archetypeId: number; // Long corresponds to number
-  name: string;
-  author: string;
-  totalPrice: number; // Float in Java corresponds to number in TypeScript
-  cards: DeckCard[]; // List<DeckCardResponseDTO> corresponds to an array of DeckCardResponseDTO
+  id: number; // Corresponds to Long in Java
+  archetypeId: number; // Corresponds to the archetype's ID (Long in Java)
+  name: string; // Deck name
+  author: string; // Deck author
+  totalPrice: number; // Float in Java corresponds to number
+  image: string; // URL for the deck image
+  description: string; // Text content for the deck description
+  variant: string; // Variant type of the deck
+  variant_pokemons: string[]; // List of Pokémon names in the variant
+  variant_pokemons_images: string[];
+  cards: DeckCard[]; // Array of cards in the deck
 }
 
 export interface DeckCard {

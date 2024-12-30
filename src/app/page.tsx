@@ -8,8 +8,8 @@ export default function Home() {
     <div className="grid grid-rows-[auto_1fr_auto] font-[family-name:var(--font-geist-sans)]">
       <div className=" row-start-1 p-8">
         <header className="text-center">
-          <h1 className="text-3xl font-bold">Welcome to ptcgpocket.net!</h1>
-          <p className="text-lg mt-4">
+          <h1 className="text-4xl font-bold">Welcome to ptcgpocket.net!</h1>
+          <p className="text-2xl mt-4">
             Your all-in-one source for the latest and most reliable information
             on the Pokémon TCG Pocket game.
           </p>

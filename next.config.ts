@@ -11,6 +11,30 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "assets.pokemon.com",
+        port: "",
+        pathname: "/static-assets/content-assets/**",
+      },
+      {
+        protocol: "https",
+        hostname: "assets.pokemon-zone.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "wallpapers.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "img.pokemondb.net",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
         hostname: "s3.amazonaws.com",
         port: "",
         pathname: "/**",

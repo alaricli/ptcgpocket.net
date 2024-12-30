@@ -34,9 +34,9 @@ export default async function CardPage({
   }
 
   return (
-    <div className="min-w-screen shadow-lg rounded-lg overflow-hidden flex">
+    <div className="mx-auto container shadow-lg rounded-lg overflow-hidden flex p-16">
       {/* Left Section: Image */}
-      <div className="w-1/3 p-4 flex items-center justify-center">
+      <div className="w-1/3 p-4 flex items-center justify-center mr-12">
         <Image
           src={cardDetails.cardImages.large}
           alt={cardDetails.name}
@@ -50,7 +50,7 @@ export default async function CardPage({
       <div className="w-1/3 p-4 flex flex-col justify-center space-y-4">
         {/* Card Name */}
         <div className="flex items-center space-x-4">
-          <h1 className="text-2xl font-bold leading-none flex items-center space-x-4">
+          <h1 className="text-3xl font-bold leading-none flex items-center space-x-4">
             <span>{cardDetails.name}</span>
 
             {(cardDetails.superType === "Pokémon" ||
@@ -123,7 +123,10 @@ export default async function CardPage({
             )}
             <h2 className="text-lg font-semibold">Attacks:</h2>
             {cardDetails.attacks.map((attack, index) => (
-              <div key={index} className="p-4 border rounded-md my-2">
+              <div
+                key={index}
+                className="p-4 border rounded-md my-2 bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200"
+              >
                 <div className="font-semibold">{attack.name}</div>
                 <div className="flex justify-between mt-2">
                   <div className="flex space-x-1">
@@ -144,7 +147,8 @@ export default async function CardPage({
         {/* Trainer Card Text */}
         {cardDetails.superType === "Trainer" && (
           <div>
-            <p className="p-4 border rounded-md my-2">
+            <h2 className="text-lg font-semibold">Text:</h2>
+            <p className="p-4 border rounded-md my-2 bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
               {cardDetails.trainerCardText}
             </p>
           </div>

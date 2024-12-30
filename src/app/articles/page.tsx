@@ -4,7 +4,12 @@ import Link from "next/link";
 
 async function fetchArticles(): Promise<Article[]> {
   try {
-    const response = await fetch("https://api.ptcgpocket.net/api/get/articles");
+    const response = await fetch(
+      "https://api.ptcgpocket.net/api/get/articles",
+      {
+        cache: "no-store",
+      }
+    );
     console.log("response status, ", response.status);
 
     if (!response.ok) {

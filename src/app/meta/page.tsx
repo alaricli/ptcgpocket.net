@@ -5,7 +5,10 @@ import Link from "next/link";
 async function fetchArchetypes(): Promise<Archetype[]> {
   try {
     const response = await fetch(
-      "https://api.ptcgpocket.net/api/get/archetypes/pocket"
+      "https://api.ptcgpocket.net/api/get/archetypes/pocket",
+      {
+        cache: "no-store",
+      }
     );
 
     if (!response.ok) {

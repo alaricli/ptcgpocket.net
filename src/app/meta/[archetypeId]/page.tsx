@@ -129,7 +129,7 @@ export default function DecksByArchetypePage() {
           </div>
         </div>
       ) : (
-        <div>Archetype doesn't exist</div>
+        <div>Archetype doesn&apos;t exist</div>
       )}
     </div>
   );

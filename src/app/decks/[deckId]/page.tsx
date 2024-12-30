@@ -214,7 +214,7 @@ export default function DeckPage() {
           </div>
         </div>
       ) : (
-        <div>This deck doesn't exist, please return home.</div>
+        <div>This deck doesn&apos;t exist, please return home.</div>
       )}
     </div>
   );

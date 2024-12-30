@@ -5,6 +5,7 @@ import Link from "next/link";
 async function fetchArticles(): Promise<Article[]> {
   try {
     const response = await fetch("https://api.ptcgpocket.net/api/get/articles");
+    console.log("response status, ", response.status);
 
     if (!response.ok) {
       throw new Error("Failed to fetch Articles");
@@ -19,6 +20,7 @@ async function fetchArticles(): Promise<Article[]> {
 
 export default async function ArticlesPage() {
   const articles = await fetchArticles();
+  console.log("articles: ", articles);
   const sortedArticles = articles.sort(
     (a, b) =>
       new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime()

@@ -154,7 +154,7 @@ export default function SetPage({
     <div className="">
       <header
         className={`${headerColorOptions[setId] || headerColorOptions.default}
-        shadow-md py-4 px-6 flex items-center justify-between w-full`}
+        shadow-md py-4 px-6 flex-col md:flex-row flex md:items-center md:justify-between w-full`}
       >
         <div className="flex items-center h-24 w-24 overflow-hidden">
           {expansionDetails?.expansionImages?.logo && (
@@ -167,13 +167,13 @@ export default function SetPage({
             />
           )}
         </div>
-        <div className="absolute left-1/2 transform -translate-x-1/2 text-center">
+        <div className="text-center p-4 md:p-0">
           <h1 className="text-3xl font-semibold text-white">
             {expansionDetails?.name || "Loading..."}
           </h1>
           <p className="text-gray-100">{expansionDetails?.expansionCode}</p>
         </div>
-        <div className="text-white text-right">
+        <div className="text-white text-center md:text-right">
           {expansionDetails?.total !== undefined &&
             expansionDetails.total > 0 && (
               <p>Set Total: {expansionDetails.total}</p>
@@ -406,7 +406,7 @@ export default function SetPage({
       )}
 
       {/* Cards Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 container mx-auto pt-6">
+      <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 container mx-auto pt-6">
         {cards.map((card) => (
           <div
             key={card.id}

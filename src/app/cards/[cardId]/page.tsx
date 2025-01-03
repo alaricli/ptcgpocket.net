@@ -34,21 +34,20 @@ export default async function CardPage({
   }
 
   return (
-    <div className="mx-auto container shadow-lg rounded-lg overflow-hidden flex p-16">
-      {/* Left Section: Image */}
-      <div className="w-1/3 p-4 flex items-center justify-center mr-12">
+    <div className="mx-auto container shadow-lg rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-16 py-8">
+      {/* Left/Top Section: Image */}
+      <div className="flex justify-center md:p-8">
         <Image
           src={cardDetails.cardImages.large}
           alt={cardDetails.name}
-          className="w-full h-auto max-w-sm rounded-md shadow-md"
-          width={250}
-          height={250}
+          className="w-auto h-auto max-w-full object-contain rounded-md shadow-md"
+          width={400}
+          height={400}
         />
       </div>
 
-      {/* Right Section: Details */}
-      <div className="w-1/3 p-4 flex flex-col justify-center space-y-4">
-        {/* Card Name */}
+      {/* Right/Bottom Section: Details */}
+      <div className="p-4 flex flex-col space-y-4">
         <div className="flex items-center space-x-4">
           <h1 className="text-3xl font-bold leading-none flex items-center space-x-4">
             <span>{cardDetails.name}</span>

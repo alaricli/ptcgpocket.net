@@ -30,7 +30,7 @@ export default async function SetsPage() {
   return (
     <div className="container mx-auto">
       <h1 className="text-4xl font-semibold py-6">All Sets</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-4 md:mb-0">
         {sets.map((set) => (
           <Link
             key={set.id}

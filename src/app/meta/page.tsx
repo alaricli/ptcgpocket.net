@@ -29,7 +29,7 @@ export default async function MetaPage() {
     <div className="px-4 sm:px-6 lg:px-8 py-8 mx-auto container">
       <div className="text-center mb-8">
         <h2 className="text-4xl font-semibold mb-2">Meta Decks</h2>
-        <p className="text-sm italic">last updated: December 28, 2024</p>
+        <p className="text-sm italic">last updated: January 10, 2025</p>
       </div>
 
       <div className="grid grid-cols-[1fr,2fr,2fr,5fr,1fr] items-center gap-4 border p-4 font-semibold dark:bg-gray-800 bg-gray-200 text-gray-800 dark:text-gray-200">

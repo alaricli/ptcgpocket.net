@@ -3,6 +3,7 @@
 import { Article } from "@/types/types";
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
+import parse from "html-react-parser";
 import React, { useEffect, useState } from "react";
 
 async function fetchArticle(articleSlug: string): Promise<Article | null> {
@@ -110,7 +111,7 @@ export default function ArticlePage() {
                         .split("\n\n")
                         .map((paragraph, paragraphIndex) => (
                           <p key={paragraphIndex} className="text-base">
-                            {paragraph}
+                            {parse(paragraph)}
                           </p>
                         ))}
                     </div>

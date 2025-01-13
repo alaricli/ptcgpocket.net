@@ -28,7 +28,9 @@ export default async function MetaPage() {
   return (
     <div className="px-4 sm:px-6 lg:px-8 py-8 mx-auto container">
       <div className="text-center mb-8">
-        <h2 className="text-4xl font-semibold mb-2">Meta Decks</h2>
+        <h2 className="text-4xl font-semibold mb-2">
+          Pokémon TCG Pocket Meta Decks
+        </h2>
         <p className="text-sm italic">last updated: January 10, 2025</p>
       </div>
 

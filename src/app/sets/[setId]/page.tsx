@@ -117,6 +117,7 @@ export default function SetPage({
       { value: "A1-2", label: "Genetic Apex: Charizard Pack" },
       { value: "A1-3", label: "Genetic Apex: Pikachu Pack" },
     ],
+    A1a: [{ value: "A1a", label: "Mythical Island Pack" }],
     PROMOA: [
       { value: "PA1-1", label: "Promo Pack A Series Vol.1" },
       { value: "PA1-2", label: "Promo Pack A Series Vol.2" },

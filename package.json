@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.4.1",
+    "@vercel/speed-insights": "^1.1.0",
     "frontend": "file:",
     "html-react-parser": "^5.2.2",
     "next": "^15.1.0",

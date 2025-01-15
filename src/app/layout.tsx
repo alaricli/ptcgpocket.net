@@ -7,7 +7,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "ptcgpocket.net",
-  description: "",
+  description:
+    "Your all-in-one source for the latest and most reliable information on the Pokémon TCG Pocket game.",
 };
 
 export default function RootLayout({
@@ -17,12 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Analytics />
-      <SpeedInsights />
       <body className={`antialiased min-h-screen flex flex-col`}>
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
